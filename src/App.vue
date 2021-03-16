@@ -1,17 +1,20 @@
 <template>
   <div id="app">
-  
-    <HelloWorld msg="This is my first vue project!"/>
+    <Header />
+    <div id='content' class="content">
+      <router-view></router-view>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from './components/HelloWorld.vue'
+import Header from './components/layout/Header'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Header
   }
 }
 </script>
@@ -23,6 +26,8 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
+#content {
+  margin-top: 1em;
+  }
 </style>
