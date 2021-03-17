@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Header />
+    <HeaderNavbar />
     <div id='content' class="content">
       <router-view></router-view>
     </div>
@@ -9,12 +9,12 @@
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
-import Header from './components/layout/Header'
+import HeaderNavbar from './components/layout/Header'
 
 export default {
   name: 'App',
   components: {
-    Header
+    HeaderNavbar
   }
 }
 </script>
